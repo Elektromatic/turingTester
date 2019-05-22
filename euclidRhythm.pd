@@ -1,0 +1,36 @@
+#N canvas 429 565 306 362 12;
+#N canvas 798 113 632 468 copyrightInfo 0;
+#X text 43 19 This program creates generative music on an Elektron
+Digitone. Copyright (C) 2019 Jerry Z. Raski This program is free software:
+you can redistribute it and/or modify it under the terms of the GNU
+General Public License as published by the Free Software Foundation
+\, either version 3 of the License \, or (at your option) any later
+version. This program is distributed in the hope that it will be useful
+\, but WITHOUT ANY WARRANTY \; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General
+Public License for more details. You should have received a copy of
+the GNU General Public License along with this program. If not \, see
+<https://www.gnu.org/licenses/>.;
+#X text 74 306 j.raski@gmail.com;
+#X restore 64 298 pd copyrightInfo;
+#X obj 72 190 eSeq \$1;
+#X obj 72 240 outlet;
+#X obj 72 169 inlet;
+#X floatatom 187 107 7 0 0 0 - - -, f 7;
+#X obj 157 169 random 8;
+#X obj 114 169 + 1;
+#X obj 114 149 random 7;
+#X obj 114 32 expDist \$1;
+#X obj 199 129 random 8;
+#X obj 199 149 + 8;
+#X connect 1 0 2 0;
+#X connect 3 0 1 0;
+#X connect 5 0 1 2;
+#X connect 6 0 1 1;
+#X connect 7 0 6 0;
+#X connect 8 0 7 0;
+#X connect 8 0 5 0;
+#X connect 8 0 9 0;
+#X connect 8 1 4 0;
+#X connect 9 0 10 0;
+#X connect 10 0 1 3;

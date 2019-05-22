@@ -1,0 +1,154 @@
+#N canvas 1052 132 811 807 12;
+#X obj 84 388 i;
+#X obj 84 368 + 0.5;
+#X obj 84 408 tabread pentaScalea;
+#X obj 246 164 chooseScalea;
+#X floatatom 57 428 3 0 0 0 - - -, f 3;
+#X floatatom 44 368 5 0 0 0 - - -, f 5;
+#X obj 84 469 noteout 1;
+#X obj 84 348 * 4;
+#X obj 66 328 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 84 328 turingSeq~ trk1;
+#X obj 450 25 turingSeq trk1;
+#X obj 392 388 i;
+#X obj 392 368 + 0.5;
+#X floatatom 365 428 3 0 0 0 - - -, f 3;
+#X floatatom 352 368 5 0 0 0 - - -, f 5;
+#X obj 392 348 * 4;
+#X obj 374 329 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 259 37 bng 30 250 50 0 empty empty Go -22 7 0 10 -204786 -1
+-1;
+#X obj 259 70 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 220 183 spigot;
+#X floatatom 247 146 5 0 0 1 bpm - -, f 5;
+#X obj 267 90 sel 0 1;
+#X obj 288 109 s go;
+#X obj 166 127 midiClockOut;
+#X obj 267 127 s go;
+#X obj 84 589 i;
+#X obj 84 569 + 0.5;
+#X floatatom 44 569 5 0 0 0 - - -, f 5;
+#X obj 84 549 * 4;
+#X obj 65 530 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X text 540 136 5 and 17;
+#X obj 84 509 euclidRhythm trk3;
+#X floatatom 270 603 6 0 0 1 ms - -, f 6;
+#X obj 197 529 expDist d;
+#X obj 504 328 expDist c;
+#X floatatom 577 401 6 0 0 1 ms - -, f 6;
+#X obj 196 328 expDist b;
+#X floatatom 269 401 6 0 0 1 ms - -, f 6;
+#X floatatom 58 408 3 0 0 0 - - -, f 3;
+#X floatatom 364 407 3 0 0 0 - - -, f 3;
+#X obj 392 408 tabread pentaScalea;
+#X obj 84 609 tabread pentaScalea;
+#X obj 84 428 + 53;
+#X text 668 736 fairy chords;
+#X obj 392 428 + 53;
+#X obj 392 469 noteout 2;
+#X text 517 308 l=16;
+#X floatatom 57 628 3 0 0 0 - - -, f 3;
+#X floatatom 56 607 3 0 0 0 - - -, f 3;
+#X obj 84 628 + 53;
+#X obj 84 669 noteout 3;
+#X text 493 360 4;
+#X text 682 748 star bells;
+#X text 185 360 4;
+#X text 540 9 4 and 11;
+#X text 701 9 4 and 7;
+#X obj 84 308 euclidRhythm trk1;
+#X obj 392 308 euclidRhythm trk2;
+#X text 186 561 4;
+#X text 208 509 l=32 or 16;
+#X text 668 760 crystal cave;
+#X text 458 713 twinkle toes \, cosmic puddle \, seafoam green;
+#X text 208 306 l=16 lambda=0.1;
+#X obj 44 720 loadbang;
+#N canvas 798 113 632 468 copyrightInfo 0;
+#X text 43 19 This program creates generative music on an Elektron
+Digitone. Copyright (C) 2019 Jerry Z. Raski This program is free software:
+you can redistribute it and/or modify it under the terms of the GNU
+General Public License as published by the Free Software Foundation
+\, either version 3 of the License \, or (at your option) any later
+version. This program is distributed in the hope that it will be useful
+\, but WITHOUT ANY WARRANTY \; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General
+Public License for more details. You should have received a copy of
+the GNU General Public License along with this program. If not \, see
+<https://www.gnu.org/licenses/>.;
+#X text 74 306 j.raski@gmail.com;
+#X restore 108 760 pd copyrightInfo;
+#X obj 44 760 print -n;
+#X msg 44 740 turingTester Copyright (C) 2019 Jerry Z Raski;
+#X obj 392 328 turingSeq~ trk2;
+#X obj 84 529 turingSeq~ trk3;
+#X obj 605 25 turingSeq trk2;
+#X obj 450 152 turingSeq trk3;
+#X text 605 688 DIGITONE SOUNDS USED:;
+#X text 619 725 See also:hydrophone;
+#X obj 392 448 makenote 80 3000;
+#X obj 84 648 makenote 80 3000;
+#X text 556 700 VoltageCtrlR's Audio Origami;
+#X obj 84 448 makenote 80 3000;
+#X connect 0 0 2 0;
+#X connect 0 0 38 0;
+#X connect 1 0 0 0;
+#X connect 2 0 4 0;
+#X connect 2 0 42 0;
+#X connect 7 0 1 0;
+#X connect 9 0 5 0;
+#X connect 9 0 7 0;
+#X connect 11 0 39 0;
+#X connect 11 0 40 0;
+#X connect 12 0 11 0;
+#X connect 15 0 12 0;
+#X connect 17 0 18 0;
+#X connect 18 0 19 1;
+#X connect 18 0 21 0;
+#X connect 19 0 56 0;
+#X connect 19 0 57 0;
+#X connect 19 0 31 0;
+#X connect 21 0 24 0;
+#X connect 21 1 22 0;
+#X connect 23 2 19 0;
+#X connect 23 2 3 0;
+#X connect 23 3 20 0;
+#X connect 25 0 41 0;
+#X connect 25 0 48 0;
+#X connect 26 0 25 0;
+#X connect 28 0 26 0;
+#X connect 31 0 29 0;
+#X connect 31 0 68 0;
+#X connect 32 0 74 2;
+#X connect 33 1 32 0;
+#X connect 34 1 35 0;
+#X connect 35 0 73 2;
+#X connect 36 1 37 0;
+#X connect 37 0 76 2;
+#X connect 40 0 13 0;
+#X connect 40 0 44 0;
+#X connect 41 0 49 0;
+#X connect 41 0 47 0;
+#X connect 42 0 76 0;
+#X connect 44 0 73 0;
+#X connect 49 0 74 0;
+#X connect 56 0 9 0;
+#X connect 56 0 8 0;
+#X connect 57 0 16 0;
+#X connect 57 0 67 0;
+#X connect 63 0 66 0;
+#X connect 66 0 65 0;
+#X connect 67 0 14 0;
+#X connect 67 0 15 0;
+#X connect 68 0 27 0;
+#X connect 68 0 28 0;
+#X connect 73 0 45 0;
+#X connect 73 1 45 1;
+#X connect 74 0 50 0;
+#X connect 74 1 50 1;
+#X connect 76 0 6 0;
+#X connect 76 1 6 1;
