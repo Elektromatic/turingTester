@@ -2,7 +2,7 @@ C------------------------------------------------------------------------------
 C  			        turingTester                  
 C------------------------------------------------------------------------------
 C
-C  This pd patch creates "generative music" in conjunction with a Elektron 
+C  This pd patch creates "generative music" in conjunction with an Elektron 
 C  Digitone polyphonic synthesizer.
 C
 C  It uses a Pure Data patch to model Music Thing Modular's Turing Machine 
