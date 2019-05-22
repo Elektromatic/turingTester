@@ -20,7 +20,7 @@ C
 C  The Digitone synthesizes music using sounds from Voltagectrlr's Audio Origami
 C  sound pack available here: https://audibleobjects.com/
 C
-C  Please see https://youtu.be/xxxxxx for an example of it's use.
+C  Please see https://youtu.be/RGQ-l0YqNwE for an example of it's use.
 C
 C------------------------------------------------------------------------------
 C  Requirements:   Pure Data <https://puredata.info/downloads/pure-data>
